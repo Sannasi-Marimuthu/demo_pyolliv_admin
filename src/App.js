@@ -43,8 +43,8 @@ const App = () => {
           </div>
         }
       >
-        {auth ? <DefaultLayout /> : <Login />}
-        {/* <DefaultLayout /> */}
+        {/* {auth ? <DefaultLayout /> : <Login />} */}
+        <DefaultLayout />
       </Suspense>
     </HashRouter>
   )
