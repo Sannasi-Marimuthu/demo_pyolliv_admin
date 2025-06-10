@@ -1,0 +1,146 @@
+[debug] [2025-02-06T11:04:52.272Z] ----------------------------------------------------------------------
+[debug] [2025-02-06T11:04:52.275Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\saran\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-02-06T11:04:52.275Z] CLI Version:   13.29.1
+[debug] [2025-02-06T11:04:52.275Z] Platform:      win32
+[debug] [2025-02-06T11:04:52.276Z] Node Version:  v22.11.0
+[debug] [2025-02-06T11:04:52.276Z] Time:          Thu Feb 06 2025 16:34:52 GMT+0530 (India Standard Time)
+[debug] [2025-02-06T11:04:52.276Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-06T11:04:52.281Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-02-06T11:04:52.393Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-06T11:04:52.394Z] > authorizing via signed-in user (durga@microgenn.com)
+[debug] [2025-02-06T11:04:52.395Z] [iam] checking project microgenndigitalmenuadminpanel for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-02-06T11:04:52.396Z] Checked if tokens are valid: false, expires at: 1737542814283
+[debug] [2025-02-06T11:04:52.396Z] Checked if tokens are valid: false, expires at: 1737542814283
+[debug] [2025-02-06T11:04:52.397Z] > refreshing access token with scopes: []
+[debug] [2025-02-06T11:04:52.398Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-02-06T11:04:52.398Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-06T11:04:52.654Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-02-06T11:04:52.654Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-02-06T11:04:52.667Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/microgenndigitalmenuadminpanel:testIamPermissions [none]
+[debug] [2025-02-06T11:04:52.668Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/microgenndigitalmenuadminpanel:testIamPermissions x-goog-quota-user=projects/microgenndigitalmenuadminpanel
+[debug] [2025-02-06T11:04:52.668Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/microgenndigitalmenuadminpanel:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-06T11:04:53.069Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-02-06T11:04:53.069Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-02-06T11:04:54.064Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/microgenndigitalmenuadminpanel:testIamPermissions 200
+[debug] [2025-02-06T11:04:54.064Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/microgenndigitalmenuadminpanel:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-02-06T11:04:54.066Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:54.066Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:54.067Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/microgenndigitalmenuadminpanel [none]
+[debug] [2025-02-06T11:04:54.479Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/microgenndigitalmenuadminpanel 200
+[debug] [2025-02-06T11:04:54.479Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/microgenndigitalmenuadminpanel {"projectId":"microgenndigitalmenuadminpanel","projectNumber":"450863653089","displayName":"microgenndigitalmenuadminpanel","name":"projects/microgenndigitalmenuadminpanel","resources":{"hostingSite":"microgenndigitalmenuadminpanel"},"state":"ACTIVE","etag":"1_23b70840-f91c-4804-9347-dfcda10ee92e"}
+[info] 
+[info] === Deploying to 'microgenndigitalmenuadminpanel'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-02-06T11:04:54.490Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:54.490Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:54.491Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/microgenndigitalmenuadminpanel/versions [none]
+[debug] [2025-02-06T11:04:54.491Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/microgenndigitalmenuadminpanel/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-02-06T11:04:55.612Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/microgenndigitalmenuadminpanel/versions 200
+[debug] [2025-02-06T11:04:55.613Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/microgenndigitalmenuadminpanel/versions {"name":"projects/450863653089/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[microgenndigitalmenuadminpanel]: beginning deploy... 
+[info] i  hosting[microgenndigitalmenuadminpanel]: found 23 files in build 
+[debug] [2025-02-06T11:04:55.644Z] [hosting] uploading with 200 concurrency
+[debug] [2025-02-06T11:04:55.716Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:55.716Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:55.720Z] [hosting] hash cache [YnVpbGQ] stored for 23 files
+[debug] [2025-02-06T11:04:55.720Z] [hosting][hash queue][FINAL] {"max":62,"min":17,"avg":23.695652173913043,"active":0,"complete":23,"success":23,"errored":0,"retried":0,"total":23,"elapsed":71}
+[debug] [2025-02-06T11:04:55.721Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/450863653089/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e:populateFiles [none]
+[debug] [2025-02-06T11:04:55.721Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/450863653089/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e:populateFiles {"files":{"/manifest.json":"c39f35410b502077ec6986d9d8c797656a91f7678b4b68dba5a8c93359ebb069","/index.html":"f2901b4be539eeb1d278ad8269796cf18d930460b4ad17e61e1f8c8379b3deb5","/assets/RoomView-B4z8u9kJ.js":"e8c31f3b2ae5958df9657356b2db5a8669579b2dabce944278671f79df24c89b","/favicon.ico":"0defbece433f1c885f02ee0f5f1e641a5a7028c05e505402b9d2fde629096238","/assets/Transport-DtoIDtAg.js":"b9c5101b9602ef92be5e486697bf0fe4f5336d3d5b84da0f4ab0d1febd8447c7","/assets/PropertyType-CfYYJRMG.js":"c457026e381b54d06472e7dea15d82e76710aa0dea14d479f253e1fa152aa07d","/assets/Measurement-Exjc_JTz.js":"714be768393250f9243726998a5679718c7969e71dd09c656eeb82f1828cdf30","/assets/RoomType-CFdMUcCe.js":"8e17fecbbc14d490c0f80c733e9b3db44a4d3450a53e6fcb64155f293f0da0f1","/assets/DefaultLayout-C111EtUu.css":"e8c8261d7fb8493e71d440d175e82ac30eb89eb5a173247098f30aad94c14ce0","/assets/Dashboard-Rt369Yb0.js":"5576d7bb927c5920df48387fed3820def089d52c8892a002961f7e471c357302","/assets/BedView-CrqBpvWs.js":"f7d8169d2ef08c2cee1800b1d0a589b0c869feb04ffdf8ef0d27cad840bbc567","/assets/axios-BwZ6WYwA.css":"c0c14fcfdad192c98491db75e0b81cea6d5f06f8e54996c0145d9c18b52e6304","/assets/AmenitiesCategory-C_sJ8xTK.js":"d17d6e80debf356d8ab99923d62fb63f86c50e6d795bb258402d2562dd299308","/assets/Amenities-p59mGHeC.js":"60957d8fe154c0170062b8cf3804facd95246cdb5f485d3e4c09f17aac4e0c85","/assets/logo_1-removebg-preview-DNKggQSs.png":"24ba1b7996ae48f45bbb4db8c0e6e451c91dec14da5fb93b15f2eef6bae9a503","/assets/icons-C5EGodH8.webp":"7e38b6130f7fc64690ca41cb0f87c14741f99a84bfeb424c91b725374ea46971","/assets/components-rl0RgVTV.webp":"4c1410625c3c03a4add3dfa01b071578bdead46b8c070f8d96949ac7b52f590d","/assets/logo-removebg-preview (1)-IQrZgaEr.png":"fe422f81f855bceb6b8701f49f213f191a2907ee2b0e07b8397939c1e5936bb8","/assets/DefaultLayout-DwjMRF0G.js":"ca0698c1e1876c9c3ff1318ecde762c227c59606ec7c00f80286e3211858fe48","/assets/PropertyMaster-BIUObQD3.js":"0ae50bd07c6e51beade547be1e7eb13ce4284c9368028f7e98a9ea24dd1c35e7","/assets/index-DxXFp2aV.css":"3670283e3069b194f3721dcb21719105e9ea4f5e1186c1a0d8762a3e180f644f","/assets/index-D3DHg_X9.js":"9749fd3fbd4114e0f46f54be90e9cbd207c602679dfd049e8f74ebc89e2889cd","/assets/axios-DLYJOqi2.js":"c3443e576a88c50a6c7350a5c0479c0478e96dab1e1739c8f5fc9c68b643201a"}}
+[debug] [2025-02-06T11:04:56.183Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/450863653089/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e:populateFiles 200
+[debug] [2025-02-06T11:04:56.183Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/450863653089/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e:populateFiles {"uploadRequiredHashes":["8e17fecbbc14d490c0f80c733e9b3db44a4d3450a53e6fcb64155f293f0da0f1","e8c31f3b2ae5958df9657356b2db5a8669579b2dabce944278671f79df24c89b","c3443e576a88c50a6c7350a5c0479c0478e96dab1e1739c8f5fc9c68b643201a","ca0698c1e1876c9c3ff1318ecde762c227c59606ec7c00f80286e3211858fe48","60957d8fe154c0170062b8cf3804facd95246cdb5f485d3e4c09f17aac4e0c85","f7d8169d2ef08c2cee1800b1d0a589b0c869feb04ffdf8ef0d27cad840bbc567","c457026e381b54d06472e7dea15d82e76710aa0dea14d479f253e1fa152aa07d","0ae50bd07c6e51beade547be1e7eb13ce4284c9368028f7e98a9ea24dd1c35e7","5576d7bb927c5920df48387fed3820def089d52c8892a002961f7e471c357302","9749fd3fbd4114e0f46f54be90e9cbd207c602679dfd049e8f74ebc89e2889cd","b9c5101b9602ef92be5e486697bf0fe4f5336d3d5b84da0f4ab0d1febd8447c7","714be768393250f9243726998a5679718c7969e71dd09c656eeb82f1828cdf30","c0c14fcfdad192c98491db75e0b81cea6d5f06f8e54996c0145d9c18b52e6304","24ba1b7996ae48f45bbb4db8c0e6e451c91dec14da5fb93b15f2eef6bae9a503","fe422f81f855bceb6b8701f49f213f191a2907ee2b0e07b8397939c1e5936bb8","f2901b4be539eeb1d278ad8269796cf18d930460b4ad17e61e1f8c8379b3deb5","d17d6e80debf356d8ab99923d62fb63f86c50e6d795bb258402d2562dd299308"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files"}
+[debug] [2025-02-06T11:04:56.184Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.184Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.184Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.184Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.185Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.186Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.186Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.186Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.186Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.186Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.186Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.186Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.186Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.187Z] Checked if tokens are valid: true, expires at: 1738843491654
+[debug] [2025-02-06T11:04:56.188Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/8e17fecbbc14d490c0f80c733e9b3db44a4d3450a53e6fcb64155f293f0da0f1 [none]
+[debug] [2025-02-06T11:04:56.188Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/8e17fecbbc14d490c0f80c733e9b3db44a4d3450a53e6fcb64155f293f0da0f1 [stream]
+[debug] [2025-02-06T11:04:56.190Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/e8c31f3b2ae5958df9657356b2db5a8669579b2dabce944278671f79df24c89b [none]
+[debug] [2025-02-06T11:04:56.190Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/e8c31f3b2ae5958df9657356b2db5a8669579b2dabce944278671f79df24c89b [stream]
+[debug] [2025-02-06T11:04:56.193Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c3443e576a88c50a6c7350a5c0479c0478e96dab1e1739c8f5fc9c68b643201a [none]
+[debug] [2025-02-06T11:04:56.193Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c3443e576a88c50a6c7350a5c0479c0478e96dab1e1739c8f5fc9c68b643201a [stream]
+[debug] [2025-02-06T11:04:56.196Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/ca0698c1e1876c9c3ff1318ecde762c227c59606ec7c00f80286e3211858fe48 [none]
+[debug] [2025-02-06T11:04:56.197Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/ca0698c1e1876c9c3ff1318ecde762c227c59606ec7c00f80286e3211858fe48 [stream]
+[debug] [2025-02-06T11:04:56.199Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/60957d8fe154c0170062b8cf3804facd95246cdb5f485d3e4c09f17aac4e0c85 [none]
+[debug] [2025-02-06T11:04:56.200Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/60957d8fe154c0170062b8cf3804facd95246cdb5f485d3e4c09f17aac4e0c85 [stream]
+[debug] [2025-02-06T11:04:56.203Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/f7d8169d2ef08c2cee1800b1d0a589b0c869feb04ffdf8ef0d27cad840bbc567 [none]
+[debug] [2025-02-06T11:04:56.203Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/f7d8169d2ef08c2cee1800b1d0a589b0c869feb04ffdf8ef0d27cad840bbc567 [stream]
+[debug] [2025-02-06T11:04:56.204Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c457026e381b54d06472e7dea15d82e76710aa0dea14d479f253e1fa152aa07d [none]
+[debug] [2025-02-06T11:04:56.205Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c457026e381b54d06472e7dea15d82e76710aa0dea14d479f253e1fa152aa07d [stream]
+[debug] [2025-02-06T11:04:56.206Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/0ae50bd07c6e51beade547be1e7eb13ce4284c9368028f7e98a9ea24dd1c35e7 [none]
+[debug] [2025-02-06T11:04:56.206Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/0ae50bd07c6e51beade547be1e7eb13ce4284c9368028f7e98a9ea24dd1c35e7 [stream]
+[debug] [2025-02-06T11:04:56.207Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/5576d7bb927c5920df48387fed3820def089d52c8892a002961f7e471c357302 [none]
+[debug] [2025-02-06T11:04:56.207Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/5576d7bb927c5920df48387fed3820def089d52c8892a002961f7e471c357302 [stream]
+[debug] [2025-02-06T11:04:56.208Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/9749fd3fbd4114e0f46f54be90e9cbd207c602679dfd049e8f74ebc89e2889cd [none]
+[debug] [2025-02-06T11:04:56.209Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/9749fd3fbd4114e0f46f54be90e9cbd207c602679dfd049e8f74ebc89e2889cd [stream]
+[debug] [2025-02-06T11:04:56.210Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/b9c5101b9602ef92be5e486697bf0fe4f5336d3d5b84da0f4ab0d1febd8447c7 [none]
+[debug] [2025-02-06T11:04:56.210Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/b9c5101b9602ef92be5e486697bf0fe4f5336d3d5b84da0f4ab0d1febd8447c7 [stream]
+[debug] [2025-02-06T11:04:56.211Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/714be768393250f9243726998a5679718c7969e71dd09c656eeb82f1828cdf30 [none]
+[debug] [2025-02-06T11:04:56.211Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/714be768393250f9243726998a5679718c7969e71dd09c656eeb82f1828cdf30 [stream]
+[debug] [2025-02-06T11:04:56.212Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c0c14fcfdad192c98491db75e0b81cea6d5f06f8e54996c0145d9c18b52e6304 [none]
+[debug] [2025-02-06T11:04:56.212Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c0c14fcfdad192c98491db75e0b81cea6d5f06f8e54996c0145d9c18b52e6304 [stream]
+[debug] [2025-02-06T11:04:56.213Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/24ba1b7996ae48f45bbb4db8c0e6e451c91dec14da5fb93b15f2eef6bae9a503 [none]
+[debug] [2025-02-06T11:04:56.213Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/24ba1b7996ae48f45bbb4db8c0e6e451c91dec14da5fb93b15f2eef6bae9a503 [stream]
+[debug] [2025-02-06T11:04:56.214Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/fe422f81f855bceb6b8701f49f213f191a2907ee2b0e07b8397939c1e5936bb8 [none]
+[debug] [2025-02-06T11:04:56.214Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/fe422f81f855bceb6b8701f49f213f191a2907ee2b0e07b8397939c1e5936bb8 [stream]
+[debug] [2025-02-06T11:04:56.215Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/f2901b4be539eeb1d278ad8269796cf18d930460b4ad17e61e1f8c8379b3deb5 [none]
+[debug] [2025-02-06T11:04:56.215Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/f2901b4be539eeb1d278ad8269796cf18d930460b4ad17e61e1f8c8379b3deb5 [stream]
+[debug] [2025-02-06T11:04:56.216Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/d17d6e80debf356d8ab99923d62fb63f86c50e6d795bb258402d2562dd299308 [none]
+[debug] [2025-02-06T11:04:56.216Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/d17d6e80debf356d8ab99923d62fb63f86c50e6d795bb258402d2562dd299308 [stream]
+[debug] [2025-02-06T11:04:56.216Z] [hosting][populate queue][FINAL] {"max":471,"min":471,"avg":471,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":500}
+[debug] [2025-02-06T11:04:56.216Z] [hosting] uploads queued: 17
+[debug] [2025-02-06T11:04:57.550Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/24ba1b7996ae48f45bbb4db8c0e6e451c91dec14da5fb93b15f2eef6bae9a503 200
+[debug] [2025-02-06T11:04:57.550Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/24ba1b7996ae48f45bbb4db8c0e6e451c91dec14da5fb93b15f2eef6bae9a503 [stream]
+[debug] [2025-02-06T11:04:57.610Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/8e17fecbbc14d490c0f80c733e9b3db44a4d3450a53e6fcb64155f293f0da0f1 200
+[debug] [2025-02-06T11:04:57.611Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/8e17fecbbc14d490c0f80c733e9b3db44a4d3450a53e6fcb64155f293f0da0f1 [stream]
+[debug] [2025-02-06T11:04:57.612Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/ca0698c1e1876c9c3ff1318ecde762c227c59606ec7c00f80286e3211858fe48 200
+[debug] [2025-02-06T11:04:57.612Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/ca0698c1e1876c9c3ff1318ecde762c227c59606ec7c00f80286e3211858fe48 [stream]
+[debug] [2025-02-06T11:04:57.658Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/d17d6e80debf356d8ab99923d62fb63f86c50e6d795bb258402d2562dd299308 200
+[debug] [2025-02-06T11:04:57.658Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/d17d6e80debf356d8ab99923d62fb63f86c50e6d795bb258402d2562dd299308 [stream]
+[debug] [2025-02-06T11:04:57.665Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/714be768393250f9243726998a5679718c7969e71dd09c656eeb82f1828cdf30 200
+[debug] [2025-02-06T11:04:57.666Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/714be768393250f9243726998a5679718c7969e71dd09c656eeb82f1828cdf30 [stream]
+[debug] [2025-02-06T11:04:57.671Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/b9c5101b9602ef92be5e486697bf0fe4f5336d3d5b84da0f4ab0d1febd8447c7 200
+[debug] [2025-02-06T11:04:57.671Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/b9c5101b9602ef92be5e486697bf0fe4f5336d3d5b84da0f4ab0d1febd8447c7 [stream]
+[debug] [2025-02-06T11:04:57.860Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/60957d8fe154c0170062b8cf3804facd95246cdb5f485d3e4c09f17aac4e0c85 200
+[debug] [2025-02-06T11:04:57.861Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/60957d8fe154c0170062b8cf3804facd95246cdb5f485d3e4c09f17aac4e0c85 [stream]
+[debug] [2025-02-06T11:04:57.889Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c457026e381b54d06472e7dea15d82e76710aa0dea14d479f253e1fa152aa07d 200
+[debug] [2025-02-06T11:04:57.889Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c457026e381b54d06472e7dea15d82e76710aa0dea14d479f253e1fa152aa07d [stream]
+[debug] [2025-02-06T11:04:57.945Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c3443e576a88c50a6c7350a5c0479c0478e96dab1e1739c8f5fc9c68b643201a 200
+[debug] [2025-02-06T11:04:57.945Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/c3443e576a88c50a6c7350a5c0479c0478e96dab1e1739c8f5fc9c68b643201a [stream]
+[debug] [2025-02-06T11:04:57.957Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/0ae50bd07c6e51beade547be1e7eb13ce4284c9368028f7e98a9ea24dd1c35e7 200
+[debug] [2025-02-06T11:04:57.958Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/0ae50bd07c6e51beade547be1e7eb13ce4284c9368028f7e98a9ea24dd1c35e7 [stream]
+[debug] [2025-02-06T11:04:58.074Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/f2901b4be539eeb1d278ad8269796cf18d930460b4ad17e61e1f8c8379b3deb5 200
+[debug] [2025-02-06T11:04:58.074Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/f2901b4be539eeb1d278ad8269796cf18d930460b4ad17e61e1f8c8379b3deb5 [stream]
+[debug] [2025-02-06T11:04:58.075Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/fe422f81f855bceb6b8701f49f213f191a2907ee2b0e07b8397939c1e5936bb8 200
+[debug] [2025-02-06T11:04:58.075Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/microgenndigitalmenuadminpanel/versions/486ab6bf121d321e/files/fe422f81f855bceb6b8701f49f213f191a2907ee2b0e07b8397939c1e5936bb8 [stream]
